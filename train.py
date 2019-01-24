@@ -267,8 +267,8 @@ if __name__ == '__main__':
     train_iters(trainDataloader, n_iters=Train_Iters, print_every=Print_Every, plot_every=Print_Every)
     # 保存模型
     if IsSaveModel:
-        torch.save(Encoder_text_glo.state_dict(), './ModelPKL/enface12.pkl')
-        torch.save(Decoder_text_glo.state_dict(), './ModelPKL/deface12.pkl')
+        torch.save(Encoder_text_glo.state_dict(), './ModelPKL/entext12.pkl')
+        torch.save(Decoder_text_glo.state_dict(), './ModelPKL/detext12.pkl')
         torch.save(Encoder_face_glo.state_dict(), './ModelPKL/enface12.pkl')
         torch.save(Decoder_face_glo.state_dict(), './ModelPKL/deface12.pkl')
         torch.save(Encoder_HST_glo.state_dict(), './ModelPKL/textHST12.pkl')
